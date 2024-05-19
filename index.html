@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Wall Web | Esteja seguro!</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="particles"></div>
+        <div class="info-text">
+            <h1>Wall Web</h1>
+            <h3>Melhorando sua segurança desde 2022</h3>
+            <a href="#about" class="scroll"><i class='bx bxs-down-arrow'></i></a>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="header">
+            <h1>Sobre nós</h1>
+            <a href="#contact-form">Contate-nos</a>
+        </div>
+
+        <div class="card">
+            <img src="assets/logo.png">
+            <div class="info">
+                <h1>Somos a Wall Web</h1>
+                <p>
+                    Wall Web é uma prestadora de serviços que fornece soluções de segurança da informação. Desde 2022, temos nos dedicado a proteger dados e sistemas, garantindo a integridade, confidencialidade e disponibilidade das informações de nossos clientes.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="header">
+            <h1>Nossos Serviços</h1>
+        </div>
+        <div class="feature-cards">
+            <div class="card">
+                <div class="info">
+                    <i class='bx bxs-lock-alt'></i>
+                    <h1>Consultoria de Segurança</h1>
+                    <p>
+                        Oferecemos consultoria especializada para avaliar, planejar e implementar medidas de segurança cibernética personalizadas, garantindo a proteção contra ameaças emergentes.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <i class='bx bxs-shield'></i>
+                    <h1>Monitoramento 24/7</h1>
+                    <p>
+                        Nosso serviço de monitoramento contínuo garante a detecção e resposta rápida a incidentes de segurança, minimizando riscos e mantendo a segurança de suas operações.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <i class='bx bxs-data'></i>
+                    <h1>Proteção de Dados</h1>
+                    <p>
+                        Implementamos soluções avançadas de proteção de dados para garantir a segurança e privacidade das informações sensíveis, atendendo às exigências regulatórias e de conformidade.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <form id="contact-form"
+            action="https://formspree.io/f/mrgnvzqo"
+            method="POST"
+        >
+            <label>
+                Seu email:
+                <input type="email" name="email" required>
+            </label>
+            <label>
+                Sua mensagem:
+                <textarea name="message" required></textarea>
+            </label>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <button class="scroll-top" onclick="scrollToTop()">
+        <i class='bx bxs-up-arrow'></i>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
