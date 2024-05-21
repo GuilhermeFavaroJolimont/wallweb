@@ -224,7 +224,12 @@ header .info-text .scroll::before {
     resize: none;
 }
 
-#contato form button {
+#contato button {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
     padding: 10px 20px;
     background-color: #2b2f4b;
     color: #fff;
@@ -233,6 +238,14 @@ header .info-text .scroll::before {
     font-size: 1.2rem;
     cursor: pointer;
     transition: all 0.3s ease;
+}
+
+#contato button a{
+    background-color: #2b2f4b;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 #contato form button:hover {
@@ -281,43 +294,59 @@ header .info-text .scroll::before {
     }
 }
 
-footer{
-    background-color: #2b2f4b;
-    color: #fff;
-}
-
-#policy-content {
+#contact-content {
     padding: 40px;
-    background-color: #fff;
+    background-color: #2b2f4b;
     color: #333;
     font-size: 1rem;
     line-height: 1.8;
 }
 
-#policy-content .container {
+#contact-content .container {
     max-width: 800px;
     margin: auto;
 }
 
-#policy-content h2 {
+#contact-content h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     text-align: center;
+    color: #fff;
 }
 
-#policy-content h3 {
-    font-size: 1.5rem;
-    margin-top: 20px;
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-#policy-content p, #policy-content ul {
-    margin-bottom: 20px;
+#contact-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: #fff;
 }
 
-#policy-content ul {
-    list-style: disc inside;
+#contact-form input,
+#contact-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-#policy-content ul li {
-    margin-left: 20px;
+#contact-form button {
+    padding: 10px 20px;
+    background-color: #2b2f4b;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #fff;
+    color: #2b2f4b;
 }
