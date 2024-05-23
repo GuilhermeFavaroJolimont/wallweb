@@ -350,3 +350,15 @@ header .info-text .scroll::before {
     background-color: #fff;
     color: #2b2f4b;
 }
+
+footer{
+  background-color: #2b2f4b; 
+}
+
+footer p{
+  color: #fff; 
+}
+
+footer a{
+  color: #fff; 
+}
